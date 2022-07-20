@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/', indexRouter);
 app.use(express.static(path.join(__dirname, 'public/index.html')));
 app.use('/users', usersRouter);
-app.use('/lottery', lotteryRouter/:cmd);
+app.use('/lottery/:cmd', lotteryRouter);
 
 
 // catch 404 and forward to error handler
