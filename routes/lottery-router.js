@@ -1,5 +1,5 @@
 var express = require('express');
-var lotteryHelper = require('./lotteryHelper');
+var lotteryHelper = require('../apis/lottery-helper/lotteryHelper');
 var router = express.Router();
 
 lotteryHelper.generate();

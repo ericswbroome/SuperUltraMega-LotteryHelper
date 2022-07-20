@@ -7,7 +7,7 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-let lotteryRouter = require('./routes/lottery-helper');
+let lotteryRouter = require('./routes/lottery-router');
 var app = express();
 
 // view engine setup
@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/', indexRouter);
 app.use(express.static(path.join(__dirname, 'public/index.html')));
 app.use('/users', usersRouter);
-app.use('/lottery', lotteryRouter);
+app.use('/lottery', lotteryRouter/:cmd);
 
 
 // catch 404 and forward to error handler
